@@ -244,9 +244,76 @@ app.get('/profile', (req, res) => {
     });
 });
 
+
 app.put('/profile', (req, res) => {
     res.status(200).json(req.body);
 });
+
+
+
+
+//////////
+app.delete('/workshops/:w_id', (req, res) => {
+    res.status(200).send();
+});
+app.post('/workshops',(req, res) => {
+    console.log(req);
+    res.status(200).json({
+        w_id:123456789,
+    });
+});
+app.get('/workshops/:w_id',(req,res) => {
+    console.log(req.params.w_id);
+    if(req.params.w_id === '123456'){
+        res.status(200).json({
+            img_url : "https://images-cdn.9gag.com/images/thumbnail-facebook/9155182_1388247030.7007_yqylen_n.jpg", 
+            date:'',
+            startTime:'',
+            endTime:'',
+            location:'1',
+            content:`最初，大地守護神化身SPIDER並降臨地球，為審判揭開序幕。
+
+    人類無止盡的摧殘，導致世界陷入黑暗渾沌，為了將地球從猖狂的人類手中救出、於是，守護神化身成SPIDER，並且在2016審判日降臨，企圖將地球焚為灰燼後重生成樂土Arcadia，但是SPIDER以鐳射掃描人類後，發現Raver皆有著善良美麗的心，不過這樣仍不夠，SPIDER決定以火焰與雷電作為武裝，再次襲擊地球，讓人類臣服於SPIDER之下。於是，SPIDER再次汲取能量、蓄勢待發，劃破天際的『Lighting閃電風暴』展開新的奏章⋯⋯
+
+    2017年11月11-12日 Arcadia 再度入侵，將再度震撼您的感官神經！`,
+            title: 'llllllll',
+            start_datetime: '2017-11-11 18:11',
+            end_datetime: '2017-11-11 18:11',
+            min_number: '666',
+            max_number: '888',
+            deadline: '2017-11-11',
+            introduction: '2. 公開分享此貼文，並標註兩個人並留言 @____ @____ 5/12､5/13快來台大音樂節玩，還有台灣虎航機票可以抽！！！',
+            price: '10000',
+            phase:'over',
+            attended:false
+        })
+    }else{
+        res.status(200).json({
+            img_url : "https://images-cdn.9gag.com/images/thumbnail-facebook/9155182_1388247030.7007_yqylen_n.jpg", 
+            date:'',
+            startTime:'',
+            endTime:'',
+            location:'1',
+            content:`最初，大地守護神化身SPIDER並降臨地球，為審判揭開序幕。
+
+    人類無止盡的摧殘，導致世界陷入黑暗渾沌，為了將地球從猖狂的人類手中救出、於是，守護神化身成SPIDER，並且在2016審判日降臨，企圖將地球焚為灰燼後重生成樂土Arcadia，但是SPIDER以鐳射掃描人類後，發現Raver皆有著善良美麗的心，不過這樣仍不夠，SPIDER決定以火焰與雷電作為武裝，再次襲擊地球，讓人類臣服於SPIDER之下。於是，SPIDER再次汲取能量、蓄勢待發，劃破天際的『Lighting閃電風暴』展開新的奏章⋯⋯
+
+    2017年11月11-12日 Arcadia 再度入侵，將再度震撼您的感官神經！`,
+            title: '5555555',
+            start_datetime: '2017-11-11 18:11',
+            end_datetime: '2017-11-11 18:11',
+            min_number: '666',
+            max_number: '111',
+            deadline: '2017-11-11',
+            introduction: '2. 公開分享此貼文，並標註兩個人並留言 @____ @____ 5/12､5/13快來台大音樂節玩，還有台灣虎航機票可以抽！！！',
+            price: '10000',
+            phase:'over',
+            attended:false
+        })
+    }
+})
+
+
 
 const port = 3090;
 app.listen(port, () => {
