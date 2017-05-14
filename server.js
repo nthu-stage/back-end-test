@@ -249,6 +249,10 @@ app.put('/profile', (req, res) => {
     res.status(200).json(req.body);
 });
 
+app.post('/profile', (req, res) => {
+    res.status(200).send();
+});
+
 
 
 
@@ -266,7 +270,7 @@ app.get('/workshops/:w_id',(req,res) => {
     console.log(req.params.w_id);
     if(req.params.w_id === '123456'){
         res.status(200).json({
-            img_url : "https://images-cdn.9gag.com/images/thumbnail-facebook/9155182_1388247030.7007_yqylen_n.jpg", 
+            img_url : "https://images-cdn.9gag.com/images/thumbnail-facebook/9155182_1388247030.7007_yqylen_n.jpg",
             date:'',
             startTime:'',
             endTime:'',
@@ -289,7 +293,7 @@ app.get('/workshops/:w_id',(req,res) => {
         })
     }else{
         res.status(200).json({
-            img_url : "https://images-cdn.9gag.com/images/thumbnail-facebook/9155182_1388247030.7007_yqylen_n.jpg", 
+            img_url : "https://images-cdn.9gag.com/images/thumbnail-facebook/9155182_1388247030.7007_yqylen_n.jpg",
             date:'',
             startTime:'',
             endTime:'',
