@@ -90,22 +90,22 @@ app.post('/ideas/:i_id', (req, res) => {
 app.get('/ideas/:i_id', (req, res) => {
     if (req.params.i_id === '12345') {
         res.status(200).json({
-            i_id: 12345,
+            i_id: 1,
             idea_type: 'teach',
-            skill: '畫畫',
-            goal: '素描',
-            like_number: 12,
-            web_url: 'http://web_url/',
-            image_url: 'http://image_url/',
-            picture_url: 'https://scontent-hkg3-1.xx.fbcdn.net/v/t31.0-8/17917718_1336400693122300_4338329632218462346_o.jpg?oh=924f7d4d21a7d27f0470077355650667&oe=597B11F0',
-            name: '賴詰凱',
+            skill: '攝影',
+            goal: '隨時拿起手機紀錄身邊的美好的事物',
+            like_number: 14,
+            web_url: 'http://terry92516.wixsite.com/terrylinphoto',
+            image_url: '',
+            picture_url: 'https://scontent-tpe1-1.xx.fbcdn.net/v/t31.0-8/17917718_1336400693122300_4338329632218462346_o.jpg?oh=924f7d4d21a7d27f0470077355650667&oe=597B11F0',
+            name: '林敏皓',
             liked: true,
             isEditor: false,
             mostAvaiTime: [
-                {time: 0, people: 12},
-                {time: 4, people: 8},
-                {time: 6, people: 4},
-                {time: 9, people: 3},
+                {time: 0, people: 5},
+                {time: 4, people: 3},
+                {time: 6, people: 3},
+                {time: 9, people: 2},
                 {time: 20, people: 1},
             ],
         });
@@ -294,7 +294,7 @@ app.get('/dashboard/:w_id', (req, res) => {
             },
             {
                 name:"JAHFIA",
-                email:"listawqy@gmail.com",      
+                email:"listawqy@gmail.com",
             },
             {
                 name:"Micky",
