@@ -1,6 +1,6 @@
 module.exports = [
     {
-        img_url : "https://www.britishcouncil.org.tw/sites/default/files/styles/bc-landscape-630x354/public/le-tc-adult-general-1.jpg?itok=FSdEEOFo",
+        img_url : "http://imgur.com/o2NUy4F.jpg",
         location:'台北101',
         content:`如果你的格局只是為了競爭，那你的文案就只能寫那些促銷殺價文案。
 
@@ -29,7 +29,7 @@ module.exports = [
         name: '文卿大師兄'
     },
     {
-        img_url : "https://s3.amazonaws.com/huarenke-bucket/wp-content/uploads/2016/08/09173025/py8.jpg",
+        img_url : "http://i.imgur.com/DT8WBAn.jpg",
         location:'彰化八卦山',
         content:'有些人剛入門的時候就會買最頂尖最昂貴的攝影器材，但有時候不一定要用最昂貴的器材才能拍到好照片的。在不久之前才有一名 90 後攝影師用一部iPhone 拍出奪得 National Geographic 攝影比賽獎項，證明器材的平貴跟相片的好壞沒有一定關係，器材不是最重要的，一雙「攝影眼」才是拍出好相片的關鍵。',
         title: '10 個給攝影初學者的有用建議',

@@ -271,19 +271,29 @@ app.delete('/workshops/:w_id', (req, res) => {
     res.status(200).send();
 });
 app.post('/workshops',(req, res) => {
+    console.log(req.body);
+    workshop.push(req.body);
+    console.log(workshop);
     res.status(200).json({
-        w_id:123456789,
+        w_id:123456111,
     });
 });
+////attend
+let attend = true;
 app.post('/workshops/:w_id', (req, res) => {
     console.log("atteded req");
+    console.log(attend);
+    attend = !attend;
     res.status(200).json({
-        attended: true,
+        attended: !attend,
     });
 })
+//update
 app.put('/workshops/:id',(req, res) => {
-    console.log(req);
+    
+    workshop[1] = req.body;
     res.status(200).json(req.body)
+    console.log(req.body);
 });
 app.get('/dashboard/:w_id', (req, res) => {
     res.status(200).json({
@@ -307,6 +317,8 @@ app.get('/workshops/:w_id',(req,res) => {
     console.log(req.params.w_id);
     if(req.params.w_id === '123456'){
         res.status(200).json(workshop[0]);
+    }else if(req.params.w_id === '123456111'){
+        res.status(200).json(workshop[2])
     }else{
         res.status(200).json(workshop[1]);
     }
