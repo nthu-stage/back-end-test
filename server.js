@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const ideas = require('./ideas');
 const app = express();
 
 // Add headers
@@ -33,7 +34,7 @@ app.post('/ideas', (req, res) => {
 app.get('/ideas', (req, res) => {
     res.status(200).json([
         {
-            i_id: 12345,
+            i_id: 1,
             idea_type: 'teach',
             skill: '畫畫',
             goal: '素描',
@@ -41,9 +42,17 @@ app.get('/ideas', (req, res) => {
             liked: true,
         },
         {
-            i_id: 12,
+            i_id: 2,
             idea_type: 'learn',
-            skill: '寫程式',
+            skill: '攝影',
+            goal: '用手機拍出高質感的相片',
+            like_number: 9,
+            liked: false,
+        },
+        {
+            i_id: 3,
+            idea_type: 'learn',
+            skill: '',
             goal: '寫出 Facebook',
             like_number: 9,
             liked: false,
@@ -87,7 +96,7 @@ app.get('/ideas/:i_id', (req, res) => {
             like_number: 12,
             web_url: 'http://web_url/',
             image_url: 'http://image_url/',
-            picture_url: 'https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/14907205_1735976403393352_4070401399338628514_n.jpg?oh=a92d0f7cbf8c444eb53e3b93ba2a18dd&oe=597D50E5',
+            picture_url: 'https://scontent-hkg3-1.xx.fbcdn.net/v/t31.0-8/17917718_1336400693122300_4338329632218462346_o.jpg?oh=924f7d4d21a7d27f0470077355650667&oe=597B11F0',
             name: '賴詰凱',
             liked: true,
             isEditor: false,
