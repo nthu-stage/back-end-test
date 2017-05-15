@@ -261,10 +261,13 @@ app.delete('/workshops/:w_id', (req, res) => {
     res.status(200).send();
 });
 app.post('/workshops',(req, res) => {
-    console.log(req);
     res.status(200).json({
         w_id:123456789,
     });
+});
+app.put('/workshops/:id',(req, res) => {
+    console.log(req);
+    res.status(200).json(req.body)
 });
 app.get('/workshops/:w_id',(req,res) => {
     console.log(req.params.w_id);
