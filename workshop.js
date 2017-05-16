@@ -1,6 +1,7 @@
 module.exports = [
     {
-        img_url : "http://imgur.com/o2NUy4F.jpg",
+        w_id: 1,
+        image_url : "http://i.imgur.com/8KfJCHZ.jpg",
         location:'台北101',
         content:`如果你的格局只是為了競爭，那你的文案就只能寫那些促銷殺價文案。
 
@@ -17,30 +18,37 @@ module.exports = [
 品牌的競爭，永遠不是跟別人比。
 
 我們拚命進步，是因為不想辜負。`,
-        title: '文案的100種寫法',
-        start_datetime: '2017-11-11 18:00',
-        end_datetime: '2017-11-11 21:00',
-        min_number: '100',
+        title: '文案工作坊',
+        start_datetime: '2017-5-24 18:00',
+        end_datetime: '2017-5-24 21:00',
+        min_number: '30',
         max_number: '50',
-        deadline: '2017-11-5',
-        introduction: '文案的價值，體現在它的內容',
-        price: '1500',
+        deadline: '2017-5-21',
+        pre_deadline: '2017-5-18',
+        introduction: '重組文字，表達情感，點出故事賣點！ ',
+        price: '0',
         phase:'reached',
-        name: '文卿大師兄'
+        name: '柳文卿',
+        attendees_number: 25,
+        attended: true,
     },
     {
-        img_url : "http://i.imgur.com/DT8WBAn.jpg",
+        w_id: 2,
+        image_url : "http://i.imgur.com/FmTsK1v.jpg",
         location:'彰化八卦山',
         content:'有些人剛入門的時候就會買最頂尖最昂貴的攝影器材，但有時候不一定要用最昂貴的器材才能拍到好照片的。在不久之前才有一名 90 後攝影師用一部iPhone 拍出奪得 National Geographic 攝影比賽獎項，證明器材的平貴跟相片的好壞沒有一定關係，器材不是最重要的，一雙「攝影眼」才是拍出好相片的關鍵。',
-        title: '10 個給攝影初學者的有用建議',
-        start_datetime: '2017-08-11 08:00',
-        end_datetime: '2017-08-12 21:00',
-        min_number: '40',
-        max_number: '20',
-        deadline: '2017-08-01',
-        introduction: '對於攝影初學者，有沒有甚麼小貼士可以讓技巧更進步，或者在學習階段有甚麼要留意呢？這裏有10個要點，供各位參考一下吧！',
-        price: '100',
+        title: '生活攝影入門',
+        start_datetime: '2017-05-31 08:00',
+        end_datetime: '2017-05-31 21:00',
+        min_number: '20',
+        max_number: '40',
+        deadline: '2017-05-24',
+        introduction: '初階人像攝影工作坊，從基本觀念、拍攝所需至燈光運用，完整流程深入淺出一次瞭解。',
+        price: '50',
         phase:'investigating',
-        name:'化身單眼的男人'
+        name:'林丹衍',
+        pre_deadline: '2017-5-18',
+        attendees_number: 15,
+        attended: true,
     }
 ];
